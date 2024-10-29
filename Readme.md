@@ -16,3 +16,7 @@
 ### Output
 
 ![alt text](API.png)
+
+![alt text](swaggerdocs.png)
+
+![alt text](swaggerdocs1.png)
