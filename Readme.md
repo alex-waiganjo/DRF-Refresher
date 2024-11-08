@@ -12,6 +12,8 @@
 | _PUT_    | `/todo/{id}/` | _Update a todo_      |
 | _PATCH_  | `/todo/{id}/` | _Update todo status_ |
 | _DELETE_ | `/todo/{id}/` | _Delete a todo_      |
+| _POST_ | `/api/v1/get-token/` | _Get token_      |
+| _POST_ | `/api/v1/refresh-token/` | _Get refresh token_      |
 
 ## Features
  - JWT Authentication
