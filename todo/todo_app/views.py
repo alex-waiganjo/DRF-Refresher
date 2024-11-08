@@ -4,12 +4,14 @@ from . import serializers
 from rest_framework import generics, status
 from django.http import HttpRequest
 from rest_framework.response import Response
+from rest_framework.permissions import IsAuthenticated
 
 
 # Get and Post data
 class TodosView(generics.GenericAPIView):
     serializer_class = serializers.TodoSerializer
     queryset = Todo.objects.all()
+    permission_classes =[IsAuthenticated]
 
     def get(self, request: HttpRequest):
         todos = Todo.objects.all()
@@ -30,6 +32,7 @@ class TodosView(generics.GenericAPIView):
 class TodoView(generics.GenericAPIView):
     serializer_class = serializers.TodoSerializer
     queryset =Todo.objects.all()
+    permission_classes =[IsAuthenticated]
 
     def get(self, request: HttpRequest, id):
         todo = Todo.objects.get(pk=id)
