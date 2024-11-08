@@ -13,6 +13,10 @@
 | _PATCH_  | `/todo/{id}/` | _Update todo status_ |
 | _DELETE_ | `/todo/{id}/` | _Delete a todo_      |
 
+## Features
+ - JWT Authentication
+ - API Documentation
+
 ### Output
 
 ![alt text](API.png)
